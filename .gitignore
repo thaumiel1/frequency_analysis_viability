@@ -11,5 +11,3 @@ wheels/
 
 # Log and test files
 freq_anal_log.log
-last_30_seconds.wav
-test_capture.wav
