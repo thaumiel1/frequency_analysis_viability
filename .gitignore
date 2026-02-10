@@ -11,3 +11,4 @@ wheels/
 
 # Log and test files
 freq_anal_log.log
+assets/**
