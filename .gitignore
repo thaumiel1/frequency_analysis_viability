@@ -9,6 +9,8 @@ wheels/
 # Virtual environments
 .venv
 
+.idea
+
 # Log and test files
 freq_anal_log.log
 assets/**

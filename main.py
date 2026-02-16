@@ -16,6 +16,7 @@ def main():
     file = WavFile()
     file.read_wav()
     file.stereo_to_mono()
+    file.split_signals()
 
 
 def get_band_data(data, low, high, fs, order=5):
@@ -46,7 +47,7 @@ class WavFile:
             name: get_band_data(self.data, low, high, self.fs)
             for name, (low, high) in bands.items()
         }
-        print(split_signals)
+        print(f"split_signals: {split_signals}")
 
 
 if __name__ == "__main__":
