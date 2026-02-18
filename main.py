@@ -35,6 +35,7 @@ class WavFile:
     def read_wav(self, filename="test.wav"):
         logger.info("Reading in .wav...")
         (self.fs, self.data) = scipy.io.wavfile.read(f"./assets/{filename}")
+        print(f"fs: {self.fs}, data: {self.data}")
 
     def stereo_to_mono(self):
         logger.info("Converting .wav to mono signal...")
